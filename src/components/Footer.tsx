@@ -1,4 +1,5 @@
 import { Shield } from "lucide-react";
+import Image from "next/image";
 
 interface FooterLink {
   label: string;
@@ -57,10 +58,7 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
       
             <div className="flex items-center gap-2.5 mb-6">
-              <Shield size={34} className="text-indigo-500 lg:w-10 lg:h-10" strokeWidth={1.8} />
-              <span className="text-2xl lg:text-3xl font-extrabold text-white tracking-[-0.01em]">
-                Prime<span className="text-[#6b6ef5] font-normal italic">care</span>
-              </span>
+              <Image src="/sub-heading.svg" alt="About us" width={45} height={45} className="object-cover" />
             </div>
       
             <p className="text-[#8b93b8] text-sm sm:text-base leading-[1.7] mb-7 max-w-[480px] lg:max-w-[600px]">

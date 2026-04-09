@@ -419,10 +419,10 @@ export default function Page() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-            <button className="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-500 transition-colors text-white font-semibold px-5 sm:px-6 py-3 sm:py-3.5 rounded-full shadow-lg shadow-indigo-900/50 text-sm sm:text-base">
+            <a href="#book-appointment" className="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-500 transition-colors text-white font-semibold px-5 sm:px-6 py-3 sm:py-3.5 rounded-full shadow-lg shadow-indigo-900/50 text-sm sm:text-base">
               <Image src="/icon-phone.svg" width={20} height={20} alt="phone" />
               Book Now
-            </button>
+            </a>
             <button className="flex items-center gap-2 border border-white/30 hover:border-white/60 transition-colors text-white font-semibold px-5 sm:px-6 py-3 sm:py-3.5 rounded-full text-sm sm:text-base">
               <Plus className="w-4 h-4" />
               Enquires
@@ -1030,7 +1030,7 @@ export default function Page() {
     </section>
 
     {/* ─── BOOK APPOINTMENT ─── */}
-    <section className="bg-[#f0f2fb] px-5 sm:px-8 lg:px-[60px] pt-12 sm:pt-16 pb-16 sm:pb-20 min-h-screen font-inter">
+    <section id="book-appointment" className="bg-[#f0f2fb] px-5 sm:px-8 lg:px-[60px] pt-12 sm:pt-16 pb-16 sm:pb-20 min-h-screen font-inter">
       <div className="max-w-7xl mx-auto w-full">
 
         {/* HEADER */}

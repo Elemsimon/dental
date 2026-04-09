@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Shield, Phone, Menu, X } from "lucide-react";
+import Image from "next/image";
 
 interface NavItem {
     label: string;
@@ -26,18 +27,14 @@ const Header = () => {
  
         {/* LOGO */}
         <a href="#" className="flex items-center gap-2 no-underline shrink-0">
-          <Shield size={30} className="text-indigo-600 sm:w-[34px] sm:h-[34px]" strokeWidth={1.8} />
-          <span className="text-xl sm:text-2xl font-extrabold text-[#0f1240] tracking-[-0.01em]">
-            Prime<span className="text-[#6b6ef5] font-normal italic">care</span>
-          </span>
+          <Image src="/sub-heading.svg" alt="About us" width={45} height={45} className="object-cover" />
         </a>
  
         {/* DESKTOP NAV */}
         <nav className="hidden lg:flex items-center gap-9">
           {navItems.map((item) => (
-            <a
+            <div
               key={item.label}
-              href={item.href}
               onMouseEnter={() => setActiveLink(item.label)}
               onMouseLeave={() => setActiveLink(null)}
               className={`flex items-center gap-1 text-base font-bold whitespace-nowrap transition-colors ${
@@ -45,7 +42,7 @@ const Header = () => {
               }`}
             >
               {item.label}
-            </a>
+            </div>
           ))}
         </nav>
  
